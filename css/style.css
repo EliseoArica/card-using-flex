@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://wallpaperaccess.com/full/84248.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.card {
+  background: #fff;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*   border: 1px solid black; */
+  filter: drop-shadow(0 0 10px #222);
+}
+
+.card > img {
+  margin: 25px 0 0 0;
+  border-radius: 100%;
+  width: 190px;
+  height: 190px;
+  filter: drop-shadow(0 0 10px #555);
+}
+
+.card > .p-name {
+  margin-top: 15px;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.card > .p-job {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.box-socialmedia {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 45px;
+  width: 100%;
+}
+
+.box-socialmedia > a {
+  text-decoration: none;
+}
+
+.box-socialmedia > a > i {
+  font-size: 25px;
+}
+
+.box-social-info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+/*   margin: |cross| |main| */
+  margin: auto 0;
+  padding: 0 15%;
+}
+
+.box-social-info > .box-social__item {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background: linear-gradient(to left, #e66465, #9198e5);
+  padding: 7px;
+  box-shadow: 0 0 3px 0 black;
+}
+
+.box-social__item:last-child {
+  background: linear-gradient(to right, #e66465, #9198e5);
+}
+
+.box-social__item > p:first-child {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.box-social__item > p:nth-child(2){
+/*   font-style: ; */
+}
